@@ -1,9 +1,9 @@
 #!/bin/bash
-IMAGE_NAME="my-html-app"
+IMAGE_NAME="capstoneproject"
 DOCKERFILE_PATH="Dockerfile"
-docker build -t "$my-html-app" -f "$DOCKERFILE_PATH" .
+sudo docker build -t "$IMAGE_NAME" -f "$DOCKERFILE_PATH" .
 if [ $? -eq 0 ]; then
-    echo "Docker image '$my-html-app' built successfully."
+    echo "Docker image '$IMAGE_NAME' built successfully."
 else
     echo "Error: Docker image build failed."
 fi

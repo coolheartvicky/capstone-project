@@ -13,3 +13,6 @@ if [ $? -eq 0 ]; then
 else
     echo "Error: Failed to push Docker image to Docker Hub."
 fi
+
+
+# this is the deploy bash
